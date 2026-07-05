@@ -12,7 +12,7 @@ export default function AssetPassportModal({ assetId, isOpen, onClose }: { asset
   });
 
   return (
-    <Modal isOpen={isOpen} onClose={onClose} title="Asset Digital Passport" size="xl">
+    <Modal isOpen={isOpen} onClose={onClose} title="Asset Digital Passport" >
       {isLoading || !data ? (
         <div className="flex justify-center p-8 text-[#8b8b9e]">Loading AI Passport Data...</div>
       ) : (
